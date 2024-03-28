@@ -16,7 +16,7 @@ const links = [
 </script>
 
 <template>
-  <div class="mt-20 w-full h-[5rem] bottom-0 right-0 border-t-0.5 z-50">
+  <div class="w-full h-[5rem] bottom-0 right-0 border border-t-1">
     <div class="container mx-auto p-6 flex justify-center items-center h-full">
       <ul class="flex flex-col md:flex-row space-x-12 items-center">
         <NuxtLink

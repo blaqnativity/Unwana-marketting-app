@@ -43,7 +43,7 @@ const scrollTo = () => {
 
   <!-- cta section -->
   <section class="mt-36 text-center grid items-center">
-    <div class="space-y-8 text-center">
+    <div class="space-y-4 text-center">
       <h2 class="titleText">Welcome to Unwana Marketing</h2>
       <p class="sub-text">
         Here are the services offered by Fortis Wave Marketing

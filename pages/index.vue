@@ -21,12 +21,12 @@ const scrollTo = () => {
       <!-- left div -->
       <div class="space-y-6">
         <h2 class="lead">
-          Fortis Wave Marketing -<span class="text-slate-900">
+          Unwana Wave Marketing -<span class="text-slate-900">
             Where Marketing Meets Purpose</span
           >
         </h2>
         <p class="sub-text">
-          At FortisWave Marketing, we are a team of passionate individuals who
+          At Unwana Marketing, we are a team of passionate individuals who
           thrive on connecting with people, building relationships, and driving
           success in a dynamic and diverse work environment.
         </p>
