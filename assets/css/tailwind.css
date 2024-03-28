@@ -39,3 +39,13 @@ img {
 .carousel-img {
   @apply h-[00px];
 }
+
+input {
+  @apply outline-none text-sm font-bold text-gray-500 py-3 px-1 bg-gray-100 rounded-md;
+}
+input::placeholder {
+  @apply text-gray-400;
+}
+label {
+  @apply text-sm font-bold text-gray-500;
+}
