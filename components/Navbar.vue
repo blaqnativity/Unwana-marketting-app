@@ -1,12 +1,12 @@
 <script setup>
-const router = useRouter();
-
 const goHome = () => {
-  router.push({ path: "/" });
+  navigateTo("/");
+  // router.push({ path: "/" });
 };
 
 const handleClick = () => {
-  router.push({ path: "/contact" });
+  navigateTo("/contact");
+  // router.push({ path: "/contact" });
 };
 
 const links = [
