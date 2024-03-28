@@ -10,23 +10,14 @@ const handleClick = () => {
 };
 
 const links = [
-  { name: "About", url: "/about" },
   { name: "Services", url: "/services" },
   { name: "Careers", url: "/career" },
 ];
 </script>
 
 <template>
-  <div class="w-full h-[5rem] sticky top-0 right-0 shadow-md z-50 bg-white">
-    <div class="container mx-auto p-6 flex justify-between items-center h-full">
-      <div class="logo">
-        <span
-          class="md:text-2xl font-bold leading-10 text-orange-600 tracking-wider uppercase cursor-pointer"
-          @click="goHome"
-          >Unwana</span
-        >
-      </div>
-
+  <div class="mt-20 w-full h-[5rem] bottom-0 right-0 border-t-0.5 z-50">
+    <div class="container mx-auto p-6 flex justify-center items-center h-full">
       <ul class="flex flex-col md:flex-row space-x-12 items-center">
         <NuxtLink
           :to="link.url"
@@ -35,7 +26,7 @@ const links = [
           :key="link"
           >{{ link.name }}</NuxtLink
         >
-        <button class="btnMain" @click="handleClick">Get Started</button>
+        <button class="btnOutline" @click="handleClick">Contact Us</button>
       </ul>
     </div>
   </div>
