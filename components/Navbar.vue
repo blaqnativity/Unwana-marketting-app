@@ -10,9 +10,9 @@ const handleClick = () => {
 };
 
 const links = [
-  { name: "About", link: "/about" },
-  { name: "Services", link: "/about" },
-  { name: "Career", link: "/about" },
+  { name: "About", url: "/about" },
+  { name: "Services", url: "/services" },
+  { name: "Careers", url: "/career" },
 ];
 </script>
 
@@ -29,7 +29,7 @@ const links = [
 
       <ul class="flex flex-col md:flex-row space-x-12 items-center">
         <NuxtLink
-          to="/"
+          :to="link.url"
           class="font-medium leading-8 tracking-wide text-gray-600 hover:text-orange-600 transition-all duration-150"
           v-for="link in links"
           :key="link"

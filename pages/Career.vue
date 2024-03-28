@@ -16,12 +16,13 @@ const handleClick = () => {
     <div class="grid grid-cols-1 md:grid-cols-2 h-full items-center gap-10">
       <!-- left div -->
       <div class="space-y-6">
-        <h2 class="lead">Get to know us -</h2>
+        <h2 class="lead">Join our team today</h2>
         <p class="sub-text">
-          As a company, we are committed to making a positive impact on the
-          non-profit landscape throughout North America. We firmly believe that
-          our results-oriented approach sets us apart and empowers our clients
-          to achieve remarkable growth.
+          Join us at FortisWave Marketing, where you'll have the opportunity to
+          work with inspiring colleagues, grow both personally and
+          professionally, and be part of a purpose-driven organization that's
+          making waves in the marketing industry and beyond. Together, let's
+          make a lasting impact and build a brighter future.
         </p>
 
         <button class="btnOutline" @click="handleClick">About Us</button>
@@ -34,7 +35,7 @@ const handleClick = () => {
       </div>
       <!-- right div -->
       <div>
-        <img src="/assets/img/time.jpg" alt="" />
+        <img src="/assets/img/joinus.jpg" alt="" />
       </div>
     </div>
   </section>
