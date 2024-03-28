@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans bg-gray-50 transition-all duration-150 ease-in;
+}
+
+.btnMain {
+  @apply bg-orange-600 px-5 py-3 w-fit outline-none shadow text-white font-medium rounded-full hover:bg-orange-500 transition-all duration-150;
+}
+
+.btnOutline {
+  @apply border border-gray-200 py-3 px-5 rounded-full text-lg font-medium hover:outline hover:outline-orange-600 transition-all duration-150;
+}
