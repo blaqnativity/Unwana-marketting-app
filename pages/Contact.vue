@@ -1,10 +1,4 @@
-<script setup>
-const showSignup = ref(true);
-
-const toggleForm = () => {
-  showSignup.value = !showSignup.value;
-};
-</script>
+<script setup></script>
 
 <template>
   <!-- hero section -->
@@ -30,6 +24,17 @@ const toggleForm = () => {
       <div>
         <img src="/assets/img/contact.jpg" alt="" />
       </div>
+    </div>
+  </section>
+
+  <!-- contact form -->
+  <section class="mt-32">
+    <div class="text-center space-y-4 w-1/2 mx-auto">
+      <h2 class="subLead">Send us a message</h2>
+      <p class="sub-text">
+        Let us help you with any questions you may have. We are here to help you
+        grow your business
+      </p>
     </div>
   </section>
 </template>

@@ -42,36 +42,36 @@ const gotoCareers = () => {
   </section>
 
   <!-- join us section -->
-  <section class="mt-36 grid items-center">
-    <div class="space-y-4 text-center">
-      <h2 class="titleText">Welcome to Unwana Marketing</h2>
-      <p class="sub-text">Here are the services offered by Unwana</p>
-    </div>
-
-    <div
-      class="grid grid-cols-1 gap-10 items-center md:grid-cols-2 w-2/3 mx-auto mt-20"
-    >
-      <!-- carousel content -->
-      <div class="flex flex-col space-y-4">
-        <!-- icon -->
-        <!-- title -->
-        <h3 class="subLead">Sales & Customer Service</h3>
-        <!-- paragraph text -->
-        <p class="sub-text">
-          As the first point of contact, these teams are instrumental in
-          establishing and maintaining positive relationships with customers,
-          driving sales, and ensuring a high level of customer satisfaction. At
-          Uwana Marketing, we understand the significance of these pivotal
-          roles, and that's why we invest in training and building dedicated
-          teams that are passionate about protecting brand integrity. By
-          equipping our teams with the necessary skills and resources, we
-          empower them to provide exceptional service and deliver on our promise
-          of professionalism.
-        </p>
+  <section class="mt-36">
+    <div class="grid cols-1 items-center max-w-[80%] mx-auto">
+      <div class="space-y-4 text-center">
+        <h2 class="titleText">Welcome to Unwana Marketing</h2>
+        <p class="sub-text">Here are the services offered by Unwana</p>
       </div>
-      <div>
-        <!-- carousel image -->
-        <img class="h-[300px]" src="/assets/img/customercare.jpg" alt="" />
+
+      <!-- grid items -->
+      <div class="my-10 grid grid-cols-2 items-start gap-4">
+        <!-- img div -->
+        <img src="/assets/img/customercare.jpg" class="h-[400px]" />
+        <!-- content div -->
+        <div class="flex flex-col space-y-6">
+          <!-- icon -->
+          <span></span>
+          <!-- title -->
+          <h2 class="subLead">Sales & Customer Service</h2>
+          <!-- paragragh text -->
+          <p class="sub-text">
+            As the first point of contact, these teams are instrumental in
+            establishing and maintaining positive relationships with customers,
+            driving sales, and ensuring a high level of customer satisfaction.
+            At Unwana Marketing, we understand the significance of these pivotal
+            roles, and that's why we invest in training and building dedicated
+            teams that are passionate about protecting brand integrity. By
+            equipping our teams with the necessary skills and resources, we
+            empower them to provide exceptional service and deliver on our
+            promise of professionalism.
+          </p>
+        </div>
       </div>
     </div>
   </section>

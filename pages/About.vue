@@ -66,9 +66,9 @@ const gotoContact = () => {
           meetings, mentorship programs, or access to industry-leading training,
           we are dedicated to helping you reach new heights in your career.
           Beyond our work, we are proud to be actively engaged in community
-          service and social impact initiatives. FortisWave Marketing is more
-          than just a company; we are a force for good, driven by the belief
-          that we can create a positive change in the lives of others.
+          service and social impact initiatives. Unwana Marketing is more than
+          just a company; we are a force for good, driven by the belief that we
+          can create a positive change in the lives of others.
         </p>
       </div>
     </div>
