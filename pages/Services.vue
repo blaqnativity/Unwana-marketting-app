@@ -24,7 +24,7 @@ const gotoCareers = () => {
           Drive Sales, and Achieve Remarkable Growth
         </p>
         <div class="space-x-6">
-          <button class="btnMain" @click="gotoContact">Contact Us</button>
+          <button class="btnMain" @click="gotoContact">Contact us</button>
           <button class="btnOutline" @click="gotoCareers">Careers</button>
         </div>
 

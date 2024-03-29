@@ -26,7 +26,7 @@ const links = [
           :key="link"
           >{{ link.name }}</NuxtLink
         >
-        <button class="btnOutline" @click="handleClick">Contact Us</button>
+        <button class="btnOutline" @click="handleClick">Contact us</button>
       </ul>
     </div>
   </div>
