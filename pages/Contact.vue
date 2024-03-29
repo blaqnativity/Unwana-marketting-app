@@ -38,10 +38,19 @@
     </div>
 
     <form class="space-y-8 mt-20">
-      <BaseInput label="Full name" type="text" />
-      <BaseInput label="Email" type="email" />
+      <BaseInput label="Full name" type="text" required />
+      <BaseInput label="Email" type="email" required />
       <BaseInput label="Subject" type="text" />
-      <TextArea label="Your message" />
+      <div class="space-y-2 mt-2 text-start">
+        <Label>Your message</Label>
+        <Textmsg />
+      </div>
+
+      <button
+        class="bg-orange-600 text-bold font-lg text-white px-4 py-2 rounded-full hover:bg-orange-500 transition-all duration-150"
+      >
+        Send message
+      </button>
     </form>
   </section>
 </template>
