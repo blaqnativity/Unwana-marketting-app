@@ -7,29 +7,32 @@ const goHome = () => {
 </script>
 
 <template>
-  <section class="w-full h-screen text-center">
-    <div class="h-full flex flex-col justify-center items-center space-y-10">
-      <img class="h-60 w-auto" src="~/assets/img/404.png" alt="" />
-      <div
-        class="space-y-10 items-center text-center shadow-lg w-1/3 py-10 border rounded-lg"
+  <main
+    class="grid h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8"
+  >
+    <div class="text-center">
+      <p class="text-base font-semibold text-indigo-600 w-[50%] mx-auto">
+        {{ error }}
+      </p>
+      <h1
+        class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
       >
-        <h2 class="text-2xl text-orange-600 font-sans font-semibold">
-          Error: {{ error.statusCode }}
-        </h2>
-        <p class="text-sm uppercase text-gray-500 font-medium">
-          {{ error.message }}
-        </p>
-        <button class="btnOutline" @click="goHome">Back to Home</button>
+        {{ error.statusCode }}
+      </h1>
+      <p class="mt-6 text-base leading-7 text-gray-600">
+        {{ error.message }}
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <button
+          class="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          @click="goHome"
+        >
+          Go back home
+        </button>
+        <a href="#" class="text-sm font-semibold text-gray-900"
+          >Contact support <span aria-hidden="true">&rarr;</span></a
+        >
       </div>
     </div>
-  </section>
+  </main>
 </template>
-
-<style>
-div {
-  /* background-image: url(~/assets/img/bg-img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-}
-</style>

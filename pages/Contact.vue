@@ -36,6 +36,13 @@
         grow your business
       </p>
     </div>
+
+    <form class="space-y-8 mt-20">
+      <BaseInput label="Full name" type="text" />
+      <BaseInput label="Email" type="email" />
+      <BaseInput label="Subject" type="text" />
+      <TextArea label="Your message" />
+    </form>
   </section>
 </template>
 

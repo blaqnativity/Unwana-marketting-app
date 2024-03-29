@@ -40,12 +40,27 @@ img {
   @apply h-[00px];
 }
 
-input {
-  @apply outline-none text-sm font-bold text-gray-500 py-3 px-1 bg-gray-100 rounded-md;
+label {
+  @apply text-sm text-gray-500 leading-4 tracking-wide font-bold;
 }
+
+input {
+  @apply w-full py-3 px-2 text-sm font-bold text-gray-400 border bg-gray-100 rounded-lg;
+}
+
 input::placeholder {
   @apply text-gray-400;
 }
-label {
-  @apply text-sm font-bold text-gray-500;
+
+textarea {
+  @apply w-full py-3 px-2 text-gray-400 rounded-lg bg-gray-100 border;
+}
+
+input,
+textarea {
+  @apply outline-none;
+}
+
+form {
+  @apply md:w-1/2 mx-auto p-10 shadow rounded-xl;
 }
