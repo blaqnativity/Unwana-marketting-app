@@ -29,7 +29,7 @@ const links = [
       <ul class="flex flex-col md:flex-row space-x-12 items-center">
         <NuxtLink
           :to="link.url"
-          class="font-medium leading-8 tracking-wide text-gray-600 hover:text-orange-600 transition-all duration-150"
+          class="font-medium leading-8 tracking-wide text-gray-600 hover:text-orange-600 hover:bg-orange-100 px-3 py-1 rounded-full transition-all duration-150"
           v-for="link in links"
           :key="link"
           >{{ link.name }}</NuxtLink
