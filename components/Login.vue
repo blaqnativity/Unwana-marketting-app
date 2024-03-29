@@ -19,6 +19,6 @@
       />
     </div>
 
-    <button class="btnMain">Sign in</button>
+    <button class="btnMain">Create Account</button>
   </form>
 </template>

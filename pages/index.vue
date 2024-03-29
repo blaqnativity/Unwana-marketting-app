@@ -4,13 +4,11 @@ useHead({
   title: "Uwana",
 });
 
-const handleClick = () => {
+const goTo = () => {
   router.push({ path: "/About" });
-  // navigateTo("/About");
 };
-
-const scrollTo = () => {
-  scrollTo("/");
+const appForm = () => {
+  router.push({ path: "/careers/application" });
 };
 </script>
 
@@ -31,7 +29,8 @@ const scrollTo = () => {
           success in a dynamic and diverse work environment.
         </p>
 
-        <button class="btnOutline" @click="handleClick">About Us</button>
+        <button class="btnMain mr-6" @click="appForm">Careers</button>
+        <button class="btnOutline" @click="goTo">About Us</button>
 
         <span
           class="block cursor-pointer text-sm font-medium text-gray-600"

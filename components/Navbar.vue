@@ -6,18 +6,17 @@ const goHome = () => {
 
 const handleClick = () => {
   navigateTo("/contact");
-  // router.push({ path: "/contact" });
 };
 
 const links = [
   { name: "About", url: "/about" },
   { name: "Services", url: "/services" },
-  { name: "Careers", url: "/career" },
+  { name: "Careers", url: "/careers" },
 ];
 </script>
 
 <template>
-  <div class="w-full h-[5rem] sticky top-0 right-0 shadow-md z-50 bg-white">
+  <div class="w-full h-[5rem] sticky top-0 right-0 shadow-md z-50 bg-gray-50">
     <div class="container mx-auto p-6 flex justify-between items-center h-full">
       <div class="logo">
         <span
@@ -35,7 +34,7 @@ const links = [
           :key="link"
           >{{ link.name }}</NuxtLink
         >
-        <button class="btnMain" @click="handleClick">Get Started</button>
+        <button class="btnMain" @click="handleClick">Contact Us</button>
       </ul>
     </div>
   </div>

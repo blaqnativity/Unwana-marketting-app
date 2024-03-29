@@ -1,12 +1,11 @@
 <script setup>
 const router = useRouter();
-useHead({
-  title: "Uwana",
-});
 
-const handleClick = () => {
+const gotToCareers = () => {
+  router.push({ path: "/Careers/Application" });
+};
+const gotoAbout = () => {
   router.push({ path: "/About" });
-  // navigateTo("/About");
 };
 </script>
 
@@ -25,17 +24,12 @@ const handleClick = () => {
           make a lasting impact and build a brighter future.
         </p>
 
-        <button class="btnOutline" @click="handleClick">About Us</button>
-
-        <!-- <span
-          class="block cursor-pointer text-sm font-medium text-gray-600"
-          @click="scrollTo"
-          >Scroll down to explore</span
-        > -->
+        <button class="btnMain mr-6" @click="gotToCareers">Apply Now</button>
+        <button class="btnOutline" @click="gotoAbout">About Us</button>
       </div>
       <!-- right div -->
       <div>
-        <img src="/assets/img/joinus.jpg" alt="" />
+        <img src="/assets/img/time.jpg" alt="" />
       </div>
     </div>
   </section>
