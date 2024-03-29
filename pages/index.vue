@@ -49,19 +49,23 @@ const appForm = () => {
   <Carousel class="mt-36" />
 
   <!-- cta section -->
-  <section class="mt-36 flex text-center">
-    <div class="bg-gray-100 py-12 border rounded-md h-full">
-      <div class="w-1/2 mx-auto space-y-8">
-        <h2 class="titleText">Welcome to Unwana Media Marketing</h2>
-        <p class="sub-text">
-          As a company, we are committed to making a positive impact on the
-          non-profit landscape throughout North America. We firmly believe that
-          our results-oriented approach sets us apart and empowers our clients
-          to achieve remarkable growth.
-        </p>
-        <button class="btnMain mr-6" @click="handleClick">Contact Us</button>
-        <button class="btnOutline" @click="handleClick">Learn more</button>
+  <Cta>
+    <section class="mt-36 flex text-center">
+      <div class="bg-gray-100 py-12 border rounded-md h-full">
+        <div class="w-1/2 mx-auto space-y-8">
+          <h2 class="titleText">Welcome to Unwana Media Marketing</h2>
+          <p class="sub-text">
+            As a company, we are committed to making a positive impact on the
+            non-profit landscape throughout North America. We firmly believe
+            that our results-oriented approach sets us apart and empowers our
+            clients to achieve remarkable growth.
+          </p>
+          <div class="space-x-6">
+            <button class="btnMain" @click="handleClick">Contact Us</button>
+            <button class="btnOutline" @click="handleClick">Learn more</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </Cta>
 </template>

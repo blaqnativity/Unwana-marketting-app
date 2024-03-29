@@ -24,9 +24,9 @@
           empower them to provide exceptional service and deliver on our promise
           of professionalism.
         </p>
-        <!-- carousel image -->
       </div>
       <div>
+        <!-- carousel image -->
         <img class="h-[300px]" src="/assets/img/customercare.jpg" alt="" />
       </div>
     </div>

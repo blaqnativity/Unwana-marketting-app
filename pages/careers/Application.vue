@@ -1,13 +1,12 @@
 <script setup>
 const router = useRouter();
-useHead({
-  title: "Uwana",
-});
-
-const handleClick = () => {
-  router.push({ path: "/About" });
-  // navigateTo("/About");
-};
+definePageMeta({
+  layout: "custom",
+  title: "Unwana markettin",
+}),
+  useHead({
+    title: "Unwana",
+  });
 </script>
 
 <template>

@@ -73,4 +73,54 @@ const gotoContact = () => {
       </div>
     </div>
   </section>
+
+  <!-- join us section -->
+  <section class="mt-36 text-center grid items-center">
+    <div class="space-y-4 text-center max-w-[50%] mx-auto">
+      <h2 class="titleText">Our Location</h2>
+      <p class="sub-text">
+        If you are nearby, feel free to drop by our office at any time. We are
+        always looking for new talent to join our team!
+      </p>
+
+      <!-- location -->
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="space-y-4 text-start">
+          <!-- icon -->
+          <span></span>
+          <!-- title -->
+          <h3 class="subLead">Lagos</h3>
+          <p class="sub-text">
+            Suite 529 21 King Street West, 5th Floor Hamilton Ontario L8P 4W7
+          </p>
+          <p class="sub-text">365-888-4760</p>
+          <p class="sub-text">admin@unwana.ca</p>
+        </div>
+        <!-- map -->
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cta section -->
+  <Cta>
+    <section class="mt-36 flex text-center">
+      <div class="bg-gray-100 py-12 border rounded-md h-full">
+        <div class="w-1/2 mx-auto space-y-8">
+          <h2 class="titleText">Our Mission</h2>
+          <p class="sub-text">
+            Our mission is propelling organizations towards unparalleled
+            success. We are dedicated to serving the non-profit sector by
+            designing and executing direct marketing campaigns that deliver
+            exceptional results. Our focus extends to enhancing customer service
+            and sales techniques, as well as driving donor and customer
+            acquisition to levels beyond expectations.
+          </p>
+          <div class="space-x-6">
+            <button class="btnMain">Join Us</button>
+          </div>
+        </div>
+      </div>
+    </section></Cta
+  >
 </template>
