@@ -27,7 +27,7 @@ const gotoContact = () => {
         </p>
 
         <div class="space-x-6">
-          <button class="btnMain" @click="gotoContact">Contact Us</button>
+          <button class="btnMain" @click="gotoContact">Contact us</button>
           <button class="btnOutline" @click="gotToCareers">Careers</button>
         </div>
       </div>
@@ -117,7 +117,7 @@ const gotoContact = () => {
             acquisition to levels beyond expectations.
           </p>
           <div class="space-x-6">
-            <button class="btnMain">Join Us</button>
+            <button class="btnMain">Join us</button>
           </div>
         </div>
       </div>

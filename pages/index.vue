@@ -30,7 +30,7 @@ const appForm = () => {
         </p>
 
         <button class="btnMain mr-6" @click="appForm">Careers</button>
-        <button class="btnOutline" @click="goTo">About Us</button>
+        <button class="btnOutline" @click="goTo">About us</button>
 
         <span
           class="block cursor-pointer text-sm font-medium text-gray-600"
@@ -61,7 +61,7 @@ const appForm = () => {
             clients to achieve remarkable growth.
           </p>
           <div class="space-x-6">
-            <button class="btnMain" @click="handleClick">Contact Us</button>
+            <button class="btnMain" @click="handleClick">Contact us</button>
             <button class="btnOutline" @click="handleClick">Learn more</button>
           </div>
         </div>

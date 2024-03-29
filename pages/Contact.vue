@@ -12,7 +12,7 @@
         </p>
 
         <button class="btnMain mr-6" @click="appForm">Careers</button>
-        <button class="btnOutline" @click="goTo">About Us</button>
+        <button class="btnOutline" @click="goTo">About us</button>
 
         <span
           class="block cursor-pointer text-sm font-medium text-gray-600"

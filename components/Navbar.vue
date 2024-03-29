@@ -34,7 +34,7 @@ const links = [
           :key="link"
           >{{ link.name }}</NuxtLink
         >
-        <button class="btnMain" @click="handleClick">Contact Us</button>
+        <button class="btnMain" @click="handleClick">Contact us</button>
       </ul>
     </div>
   </div>

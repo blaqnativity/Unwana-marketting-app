@@ -86,8 +86,8 @@ const qualities = [
           impact and build a brighter future.
         </p>
 
-        <button class="btnMain mr-6" @click="gotToCareers">Apply Now</button>
-        <button class="btnOutline" @click="gotoAbout">About Us</button>
+        <button class="btnMain mr-6" @click="gotToCareers">Apply now</button>
+        <button class="btnOutline" @click="gotoAbout">About us</button>
       </div>
       <!-- right div -->
       <div>
@@ -159,7 +159,7 @@ const qualities = [
             acquisition to levels beyond expectations.
           </p>
           <div class="space-x-6">
-            <button class="btnMain">Join Us</button>
+            <button class="btnMain">Join us</button>
           </div>
         </div>
       </div>
