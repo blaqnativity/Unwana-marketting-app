@@ -11,8 +11,8 @@ const goHome = () => {
     class="grid h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8"
   >
     <div class="text-center">
-      <p class="text-base font-semibold text-indigo-600 w-[50%] mx-auto">
-        {{ error }}
+      <p class="text-base font-bold text-orange-600 w-[50%] mx-auto">
+        Oooopssy!!!
       </p>
       <h1
         class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"

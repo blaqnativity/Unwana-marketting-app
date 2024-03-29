@@ -53,7 +53,7 @@ input::placeholder {
 }
 
 textarea {
-  @apply w-full py-3 px-2 text-gray-400 rounded-lg bg-gray-100 border;
+  @apply w-full py-3 px-2 text-gray-400 rounded-lg bg-gray-100 border font-bold;
 }
 
 input,
