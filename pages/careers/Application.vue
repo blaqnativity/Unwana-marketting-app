@@ -1,16 +1,14 @@
 <script setup>
-const selectedOption = ref("");
-
-const router = useRouter();
 definePageMeta({
-  layout: "custom",
-  title: "Unwana markettin",
+  layout: 'custom',
+  title: 'Unwana markettin',
 }),
   useHead({
-    title: "Unwana",
-  });
+    title: 'Unwana',
+  })
 
-const selectOptions = ["Yes", "No"];
+const options = ref(['Yes', 'No'])
+const options2 = ref(['Full time 40 hrs per week', 'Per time 30 hrs per week approx'])
 </script>
 
 <template>
@@ -19,19 +17,14 @@ const selectOptions = ["Yes", "No"];
     <div class="text-center space-y-4">
       <div>
         <h2 class="lead">Application</h2>
-        <p class="sub-text">
-          This information will be displayed publicly so be careful what you
-          share
-        </p>
+        <p class="sub-text">This information will be displayed publicly so be careful what you share</p>
       </div>
 
       <form @submit.prevent>
         <div class="space-y-12">
           <!-- Personal bio-data -->
           <div class="border-b border-gray-900/10 pb-12">
-            <h2 class="text-base font-semibold leading-7 text-gray-900">
-              Personal Information
-            </h2>
+            <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
 
             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -48,22 +41,14 @@ const selectOptions = ["Yes", "No"];
 
           <!-- upload Resume -->
           <div class="border-b border-gray-900/10 pb-12">
-            <h2 class="text-base font-semibold leading-7 text-gray-900">
-              Resume
-            </h2>
+            <h2 class="text-base font-semibold leading-7 text-gray-900">Resume</h2>
             <div class="border-b border-gray-900/10 pb-12">
-              <div
-                class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
-              >
+              <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="col-span-full">
-                  <label
-                    for="cover-photo"
-                    class="block text-sm font-medium leading-6 text-gray-900"
+                  <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900"
                     >Upload resume</label
                   >
-                  <div
-                    class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
-                  >
+                  <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                     <div class="text-center">
                       <svg
                         class="mx-auto h-12 w-12 text-gray-300"
@@ -83,29 +68,32 @@ const selectOptions = ["Yes", "No"];
                           class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
                         >
                           <span>Select file</span>
-                          <input
-                            id="file-upload"
-                            name="file-upload"
-                            type="file"
-                            class="sr-only"
-                          />
+                          <input id="file-upload" name="file-upload" type="file" class="sr-only" />
                         </label>
                         <p class="pl-1">or drag and drop</p>
                       </div>
-                      <p class="text-xs leading-5 text-gray-600">
-                        PDF / WORD file up to 10MB
-                      </p>
+                      <p class="text-xs leading-5 text-gray-600">PDF / WORD file up to 10MB</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <UseSelect
-              label="Are you willing to be on your feet for at least 5 hrs per day?"
-              v-model="selectedOption"
-              :options="selectOptions"
-            />
           </div>
+
+          <!-- select dropdown -->
+          <UseSelect
+            class="mt-3"
+            label="Are you willing to be on your feet for at least 5 hrs per day? *"
+            :options="options"
+          />
+
+          <UseSelect class="mt-3" label="Position Preference  *" :options="options2" />
+          <UseSelect
+            class="mt-3"
+            label="Do you have any pervious experience working with Charities or Non Profit Organizations?"
+            :options="options2"
+          />
+          <UseSelect class="mt-3" label="Is English your first or primary language" :options="options2" />
         </div>
 
         <div class="mt-6 flex items-center justify-end gap-x-6">
