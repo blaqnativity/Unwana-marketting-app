@@ -20,7 +20,7 @@ const options2 = ref(['Full time 40 hrs per week', 'Per time 30 hrs per week app
         <p class="sub-text">This information will be displayed publicly so be careful what you share</p>
       </div>
 
-      <form @submit.prevent>
+      <form @submit.prevent class="space-y-14">
         <div class="space-y-12">
           <!-- Personal bio-data -->
           <div class="border-b border-gray-900/10 pb-12">
@@ -50,18 +50,7 @@ const options2 = ref(['Full time 40 hrs per week', 'Per time 30 hrs per week app
                   >
                   <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                     <div class="text-center">
-                      <svg
-                        class="mx-auto h-12 w-12 text-gray-300"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
+                      <img src="/assets/img/cloud.svg" class="w-12 h-auto mx-auto" />
                       <div class="mt-4 flex text-sm leading-6 text-gray-600">
                         <label
                           for="file-upload"
@@ -81,24 +70,26 @@ const options2 = ref(['Full time 40 hrs per week', 'Per time 30 hrs per week app
           </div>
 
           <!-- select dropdown -->
-          <UseSelect
-            class="mt-3"
-            label="Are you willing to be on your feet for at least 5 hrs per day? *"
-            :options="options"
-          />
+          <div class="space-y-6">
+            <UseSelect label="Are you willing to be on your feet for at least 5 hrs per day? *" :options="options" />
 
-          <UseSelect class="mt-3" label="Position Preference  *" :options="options2" />
-          <UseSelect
-            class="mt-3"
-            label="Do you have any pervious experience working with Charities or Non Profit Organizations?"
-            :options="options2"
-          />
-          <UseSelect class="mt-3" label="Is English your first or primary language" :options="options2" />
+            <UseSelect label="Position Preference  *" :options="options2" />
+            <UseSelect
+              label="Do you have any pervious experience working with Charities or Non Profit Organizations?"
+              :options="options"
+            />
+            <UseSelect label="Is English your first or primary language" :options="options" />
+          </div>
+
+          <div class="flex items-center justify-end gap-x-6">
+            <button class="btnOutline">Cancel</button>
+            <button class="btnMain">Save</button>
+          </div>
         </div>
 
-        <div class="mt-6 flex items-center justify-end gap-x-6">
-          <button class="btnOutline">Cancel</button>
-          <button class="btnMain">Save</button>
+        <!-- date selector -->
+        <div class="space-y-6">
+          <Date-picker />
         </div>
       </form>
     </div>
