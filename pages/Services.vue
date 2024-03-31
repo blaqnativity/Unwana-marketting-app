@@ -1,15 +1,15 @@
 <script setup>
-const router = useRouter();
+const router = useRouter()
 useHead({
-  title: "Uwana",
-});
+  title: 'Uwana',
+})
 
 const gotoContact = () => {
-  router.push({ path: "/Contact" });
-};
+  router.push({ path: '/Contact' })
+}
 const gotoCareers = () => {
-  router.push({ path: "/careers/application" });
-};
+  router.push({ path: '/careers/application' })
+}
 </script>
 
 <template>
@@ -20,17 +20,14 @@ const gotoCareers = () => {
       <div class="space-y-6">
         <h2 class="lead">Elevate Impact through Strategic Engagement</h2>
         <p class="sub-text">
-          Empowering Non-Profits and Businesses to Forge Lasting Connections,
-          Drive Sales, and Achieve Remarkable Growth
+          Empowering Non-Profits and Businesses to Forge Lasting Connections, Drive Sales, and Achieve Remarkable Growth
         </p>
         <div class="space-x-6">
           <button class="btnMain" @click="gotoContact">Contact us</button>
           <button class="btnOutline" @click="gotoCareers">Careers</button>
         </div>
 
-        <span
-          class="block cursor-pointer text-sm font-medium text-gray-600"
-          @click="scrollTo"
+        <span class="block cursor-pointer text-sm font-medium text-gray-600" @click="scrollTo"
           >Scroll down to explore</span
         >
       </div>
@@ -50,7 +47,7 @@ const gotoCareers = () => {
       </div>
 
       <!-- grid items -->
-      <div class="my-10 grid grid-cols-2 items-start gap-4">
+      <div class="my-10 grid md:grid-cols-2 items-start gap-4">
         <!-- img div -->
         <img src="/assets/img/customercare.jpg" class="h-[400px]" />
         <!-- content div -->
@@ -61,14 +58,11 @@ const gotoCareers = () => {
           <h2 class="subLead">Sales & Customer Service</h2>
           <!-- paragragh text -->
           <p class="sub-text">
-            As the first point of contact, these teams are instrumental in
-            establishing and maintaining positive relationships with customers,
-            driving sales, and ensuring a high level of customer satisfaction.
-            At Unwana Marketing, we understand the significance of these pivotal
-            roles, and that's why we invest in training and building dedicated
-            teams that are passionate about protecting brand integrity. By
-            equipping our teams with the necessary skills and resources, we
-            empower them to provide exceptional service and deliver on our
+            As the first point of contact, these teams are instrumental in establishing and maintaining positive
+            relationships with customers, driving sales, and ensuring a high level of customer satisfaction. At Unwana
+            Marketing, we understand the significance of these pivotal roles, and that's why we invest in training and
+            building dedicated teams that are passionate about protecting brand integrity. By equipping our teams with
+            the necessary skills and resources, we empower them to provide exceptional service and deliver on our
             promise of professionalism.
           </p>
         </div>
